@@ -1,0 +1,5 @@
+Please merge the reads files before feed them to TECDetec:
+
+$ cat sim_reads_end1_1.fq sim_reads_end1_2.fq > sim_reads_end1.fq
+
+$ cat sim_reads_end2_1.fq sim_reads_end2_2.fq > sim_reads_end2.fq
