@@ -8,7 +8,8 @@ TECDetec is written in perl, thus can be run in any system that have installed P
 TECDetec implements Bowtie 2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (Hatem, Bozdağ, Toland, & Çatalyürek, 2013), Tophat 2 (http://ccb.jhu.edu/software/tophat/index.shtml) (Kim et al., 2013) and Samtools (http://samtools.sourceforge.net) (Li et al., 2009). Please install these 3 softwares before starting TECDetec.
 
 TECDetec accepts paired-end RNA-Seq dataset in FASTQ format and reports TE-related transcript active genomic regions in GTF format. It requires an index of TE sequence assembly, an index of masked reference genome and an index of unmasked reference genome. Custom repetitive sequence assembly and reference genome can be indexed using bowtie2-build in Bowtie2.
-$ bowtie2-build <sequence_in_fasta_format> <basename>
+
+$ bowtie2-build \<sequence_in_fasta_format\> \<basename\>
 
 Usage of TECDetec:
 ------------------
@@ -22,9 +23,9 @@ Option
 
 -idx_te ---	The basename of the index for the transposon sequence assembly
 
-idx_mskge --- The basename of the index for the masked genome
+idx_mskge --- The basename of the index for the masked reference genome
 
--idx_ge --- The basename of the index for the transposon sequence assembly
+-idx_ge --- The basename of the index for the non-masked reference genome
 
 -lib_type ---	Library type, unstranded if not specified (default is unstranded).
                   fr - first read is sequenced in the sense orientation (e.g. Ligation)
