@@ -1,9 +1,9 @@
 TECDetec
 ========
 
-TE-related chimeric transcripts detector (open source, command line based)
+TE-related chimeric transcripts detector, from Cristina Tufarelli's lab. 
 
-TECDetec is written in perl, thus can be run in any system that have installed Perl 5.12 or higher. TECDetec contains a main script tecdetec.pl and a package PerlLib which needs to be kept in the same directory as tecdetec.pl.
+TECDetec is open source, command-line based software. It is written in perl, thus can be run in any system that have installed Perl 5.12 or higher. TECDetec contains a main script tecdetec.pl and a package PerlLib which needs to be kept in the same directory as tecdetec.pl.
 
 TECDetec implements Bowtie 2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml) (Hatem, Bozdağ, Toland, & Çatalyürek, 2013), Tophat 2 (http://ccb.jhu.edu/software/tophat/index.shtml) (Kim et al., 2013) and Samtools (http://samtools.sourceforge.net) (Li et al., 2009). Please install these 3 softwares before starting TECDetec.
 
